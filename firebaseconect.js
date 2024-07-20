@@ -6,10 +6,10 @@ const firebaseConfig = {
   apiKey: "",
   authDomain: "",
   projectId: "",
-  storageBucket: "alfaservicio-integral.appspot.com",
-  messagingSenderId: "602530827906",
-  appId: "1:602530827906:web:0745925154ce7dd9bdee9b",
-  measurementId: "G-YJ6K2ZL3VG"
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
+  measurementId: ""
 };
 
 const app = initializeApp(firebaseConfig);
