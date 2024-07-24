@@ -35,4 +35,4 @@ class ManageAccount {
     }
 }
 
-export { auth, firestore, Analytics, ManageAccount }; // Exporta ManageAccount
+export { auth, firestore, Analytics, ManageAccount }; 
