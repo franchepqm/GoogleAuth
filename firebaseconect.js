@@ -19,7 +19,7 @@ const auth = getAuth(app);
 export { firestore, auth, getDisplayName };
 
 
-signInWithGoogle() {
+signInWithGoogle() ;{
     const provider = new GoogleAuthProvider();
     return signInWithPopup(auth, provider)
       .then((result) => {
