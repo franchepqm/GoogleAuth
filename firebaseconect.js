@@ -1,7 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-analytics.js";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
-import { getFirestore } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js";
+
 
 const firebaseConfig = {
     apiKey: "",
@@ -14,9 +13,7 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const Analytics = getAnalytics(app);
 const auth = getAuth();
-const firestore = getFirestore(app);
 
 console.log("Conexión a Firebase establecida correctamente.");
 
@@ -36,7 +33,7 @@ class AccountManager {
     }
 }
 
-export { auth, firestore, Analytics, AccountManager };
+export { auth, AccountManager };
 
 
 
