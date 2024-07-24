@@ -1,7 +1,7 @@
 // firebaseconect.js
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-analytics.js";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
+import { getAuth, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
 
 const firebaseConfig = {
     apiKey: "",
@@ -26,7 +26,7 @@ class ManageAccount {
             .then((result) => {
                 const user = result.user;
                 console.log('Usuario autenticado con Google:', user);
-                window.location.href = "usuario.html";
+                window.location.href = "index.html";
             })
             .catch((error) => {
                 console.error("Error al iniciar sesión con Google: ", error.message);
@@ -35,4 +35,4 @@ class ManageAccount {
     }
 }
 
-export { auth, firestore, Analytics, ManageAccount }; 
+export { auth, Analytics, ManageAccount };
